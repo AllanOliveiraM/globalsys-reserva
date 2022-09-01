@@ -43,6 +43,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .slide-in-left {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
             animation: slide-in-left 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;

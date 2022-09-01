@@ -1,9 +1,3 @@
-import TopBar from 'components/templates/TopBar'
-
-const Home = () => (
-  <div>
-    <TopBar />
-  </div>
-)
+const Home = () => <div>temp</div>
 
 export default Home

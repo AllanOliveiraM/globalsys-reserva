@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import { ToastContainer } from 'react-toastify'
 
 import Meta from 'components/common/Meta'
+import PageWrapper from 'components/common/PageWrapper'
 
 import AppWrapper from 'contexts/AppWrapper'
 
@@ -17,7 +18,9 @@ const App = ({ Component, pageProps }: AppProps) => (
     <ToastContainer position='bottom-left' transition={Slide} />
     <GlobalStyle />
     <Meta />
-    <Component {...pageProps} />
+    <PageWrapper>
+      <Component {...pageProps} />
+    </PageWrapper>
   </AppWrapper>
 )
 
