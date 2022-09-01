@@ -1,5 +1,9 @@
-import { Box } from '@granosafe/design-system'
+import TopBar from 'components/templates/TopBar'
 
-const Home = () => <Box>temp Home page</Box>
+const Home = () => (
+  <div>
+    <TopBar />
+  </div>
+)
 
 export default Home
