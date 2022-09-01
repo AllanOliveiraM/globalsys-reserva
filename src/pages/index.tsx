@@ -1,3 +1,3 @@
-const Home = () => <div>temp</div>
+const Home = () => <div>Home</div>
 
 export default Home
