@@ -14,7 +14,9 @@ type PageWrapperProps = {
 const PageWrapper = ({ children }: PageWrapperProps) => (
   <>
     <TopBar />
+
     <Menu />
+
     <Box
       as='main'
       minHeight={`calc(100vh - ${TOP_BAR_HEIGHT})`}

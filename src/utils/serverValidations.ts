@@ -9,8 +9,8 @@ export const validateServerDefaultLanguage = (DEFAULT_LOCALE_IDENTIFIER: string)
   if (serverDefaultLocale !== DEFAULT_LOCALE_IDENTIFIER) {
     throw new Error(
       `
-      The default locale of your Next.js app is not the same as the default locale of GranoSafe.
-      Please update your Next.js config to have the same locale as GranoSafe.
+      The default locale of your Next.js server is not the same as the default locale of the application.
+      Please update your Next.js config to have the same locale as the app.
       Server: ${serverDefaultLocale}
       Client: ${DEFAULT_LOCALE_IDENTIFIER}
     `

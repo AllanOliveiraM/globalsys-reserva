@@ -19,7 +19,7 @@ const ProductFavoriteBadge = ({ product }: ProductFavoriteBadgeProps) => {
       top='0.8rem'
       data-product-slide
       {...(isActive && { 'data-product-slide-active': true })}
-      data-product-favorite-icon
+      data-product-permanet-show
       bg='rgba(255, 255, 255, 0.4)'
       borderRadius='50%'
     >

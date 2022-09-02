@@ -1,41 +1,21 @@
 import Image from 'next/image'
-import { useEffect, useMemo, useState } from 'react'
 
 import { Box } from '@granosafe/design-system'
 import { Product } from 'models/products'
 
-import { DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME } from 'constants/layout'
-
 type ImageSliderProps = {
   product: Product
+  currentShowingKey: number
+  isAnimating: boolean
+  lastKey: number
 }
 
-const ImageSlider = ({ product }: ImageSliderProps) => {
-  const [isAnimating, setIsAnimating] = useState<boolean>(false)
-  const [currentShowingKey, setCurrentShowingKey] = useState<number>(1)
-
-  const lastKey = useMemo(() => product.imageSrc.slice()?.pop()?.key || 0, [product])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!isAnimating) {
-        return
-      }
-
-      setCurrentShowingKey(prevState => {
-        if (prevState < lastKey) {
-          return prevState + 1
-        }
-
-        return 1
-      })
-    }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME)
-
-    return () => {
-      clearInterval(interval)
-    }
-  }, [isAnimating, lastKey, product.imageSrc])
-
+const ImageSlider = ({
+  product,
+  currentShowingKey,
+  isAnimating,
+  lastKey,
+}: ImageSliderProps) => {
   return (
     <>
       {product.imageSrc.map(image => (
@@ -51,30 +31,6 @@ const ImageSlider = ({ product }: ImageSliderProps) => {
           priority
           objectFit='cover'
           draggable={false}
-          onMouseEnter={() => setIsAnimating(true)}
-          onMouseLeave={() => {
-            setIsAnimating(false)
-
-            setTimeout(() => {
-              setCurrentShowingKey(1)
-            }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
-          }}
-          onTouchStart={() => setIsAnimating(true)}
-          onTouchEnd={() => {
-            setIsAnimating(false)
-
-            setTimeout(() => {
-              setCurrentShowingKey(1)
-            }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
-          }}
-          onTouchMoveCapture={() => setIsAnimating(true)}
-          onTouchCancelCapture={() => {
-            setIsAnimating(false)
-
-            setTimeout(() => {
-              setCurrentShowingKey(1)
-            }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
-          }}
         />
       ))}
       <Box

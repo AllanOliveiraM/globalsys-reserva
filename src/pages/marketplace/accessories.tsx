@@ -1,3 +1,3 @@
-const Accessories = () => <p>Accessories</p>
+import Accessories from 'views/Accessories'
 
 export default Accessories

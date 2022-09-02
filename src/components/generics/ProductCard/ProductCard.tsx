@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from 'react'
 import { toast } from 'react-toastify'
 
 import { Box, Button, Flex, Text } from '@granosafe/design-system'
@@ -5,6 +6,8 @@ import { useClientSide, useTranslate } from 'hooks'
 import { Product } from 'models/products'
 
 import { ShoppingBagContext } from 'contexts/ShoppingBagContext'
+
+import { DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME } from 'constants/layout'
 
 import ImageSlider from './ImageSlider'
 import styles from './ProductCard.module.scss'
@@ -17,6 +20,11 @@ type ProductCardProps = {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const [isAnimating, setIsAnimating] = useState<boolean>(false)
+  const [currentShowingKey, setCurrentShowingKey] = useState<number>(1)
+
+  const lastKey = useMemo(() => product.imageSrc.slice()?.pop()?.key || 0, [product])
+
   const shoppingBagContext = ShoppingBagContext.useContext()
 
   const itsInTheBag = Boolean(shoppingBagContext?.bag?.find(bag => bag.id === product.id))
@@ -25,17 +33,68 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const isClient = useClientSide()
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isAnimating) {
+        return
+      }
+
+      setCurrentShowingKey(prevState => {
+        if (prevState < lastKey) {
+          return prevState + 1
+        }
+
+        return 1
+      })
+    }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [isAnimating, lastKey, product.imageSrc])
+
   return (
-    <Box className={styles.productCardContainer}>
+    <Box
+      className={styles.productCardContainer}
+      onMouseEnter={() => setIsAnimating(true)}
+      onMouseLeave={() => {
+        setIsAnimating(false)
+
+        setTimeout(() => {
+          setCurrentShowingKey(1)
+        }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
+      }}
+      onTouchStart={() => setIsAnimating(true)}
+      onTouchEnd={() => {
+        setIsAnimating(false)
+
+        setTimeout(() => {
+          setCurrentShowingKey(1)
+        }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
+      }}
+      onTouchMoveCapture={() => setIsAnimating(true)}
+      onTouchCancelCapture={() => {
+        setIsAnimating(false)
+
+        setTimeout(() => {
+          setCurrentShowingKey(1)
+        }, DEFAULT_PRODUCT_IMAGE_TRANSITION_TIME / 2)
+      }}
+    >
       <Box
         position='relative'
         h={{
-          _: '65vw',
-          md: '42vw',
-          xl: '30vw',
+          _: '69vw',
+          md: '48vw',
+          xl: '35vw',
         }}
       >
-        <ImageSlider product={product} />
+        <ImageSlider
+          product={product}
+          currentShowingKey={currentShowingKey}
+          isAnimating={isAnimating}
+          lastKey={lastKey}
+        />
 
         <ProductFavoriteBadge product={product} />
         {product.discountPercent ? <ProductDiscountBadge product={product} /> : null}
@@ -59,6 +118,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Button
           mb={{ _: '2.4rem', sm: '0' }}
           data-product-slide
+          data-product-permanet-show
           variant='ghost'
           onClick={() => {
             if (!itsInTheBag) {

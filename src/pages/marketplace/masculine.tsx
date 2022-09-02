@@ -1,3 +1,3 @@
-const Masculine = () => <p>Masculine</p>
+import Masculine from 'views/Masculine'
 
 export default Masculine

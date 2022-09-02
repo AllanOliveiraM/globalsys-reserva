@@ -1,3 +1,3 @@
 export type IconsCommonProps = {
-  width?: string
+  width?: string | Record<string, unknown>
 }

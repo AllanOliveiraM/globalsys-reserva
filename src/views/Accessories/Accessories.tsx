@@ -3,9 +3,9 @@ import { Box } from '@granosafe/design-system'
 import FadeIn from 'components/generics/FadeIn'
 import ProductsView from 'components/templates/ProductsView/ProductsView'
 
-import { products } from 'mocks/home-products.mock'
+import { products } from 'mocks/accessories-products.mock'
 
-const Home = () => (
+const Accessories = () => (
   <FadeIn>
     <Box p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
       <ProductsView products={products} />
@@ -13,4 +13,4 @@ const Home = () => (
   </FadeIn>
 )
 
-export default Home
+export default Accessories
