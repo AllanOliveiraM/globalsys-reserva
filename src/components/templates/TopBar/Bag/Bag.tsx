@@ -185,6 +185,8 @@ const Bag = () => {
                 justifyContent='space-between'
                 variant='vAlign'
                 p='0 2.4rem 2.4rem 2.4rem'
+                flexWrap='wrap'
+                gap='1.2rem'
               >
                 <Box>
                   <Text variant='subheading'>

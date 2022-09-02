@@ -13,6 +13,17 @@ const renderComponent = () => {
   })
 }
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: '',
+      asPath: '',
+    }
+  },
+}))
+
 describe('Rendering', () => {
   beforeEach(() => {
     renderComponent()
@@ -24,9 +35,11 @@ describe('Rendering', () => {
 
   it('Change language', () => {
     fireEvent.click(screen.getByText('PT'))
-
     expect(mockClick).toHaveBeenCalledTimes(1)
+    expect(screen.getByText('English')).toBeInTheDocument()
 
+    fireEvent.click(screen.getByText('English'))
+    expect(mockClick).toHaveBeenCalledTimes(1)
     expect(screen.getByText('EN')).toBeInTheDocument()
   })
 })
