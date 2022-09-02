@@ -4,6 +4,8 @@ import { Box } from '@granosafe/design-system'
 
 import TopBar from 'components/templates/TopBar'
 
+import { TOP_BAR_HEIGHT } from 'constants/layout'
+
 type PageWrapperProps = {
   children: ReactNode
 }
@@ -11,7 +13,14 @@ type PageWrapperProps = {
 const PageWrapper = ({ children }: PageWrapperProps) => (
   <>
     <TopBar />
-    <Box as='main'>{children}</Box>
+    <Box
+      as='main'
+      minHeight={`calc(100vh - ${TOP_BAR_HEIGHT})`}
+      maxHeight={`calc(100vh - ${TOP_BAR_HEIGHT})`}
+      overflowY='auto'
+    >
+      {children}
+    </Box>
   </>
 )
 

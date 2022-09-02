@@ -29,3 +29,14 @@ export const subtractPercentage = (amount: number, percentage: number) => {
 
   return 0
 }
+
+export const getPercentage = (amount: number, percentage: number) => {
+  if (isNumber(amount) && isNumber(percentage)) {
+    const nAmount = Number(amount)
+    const nPercentage = Number(percentage)
+
+    return (nAmount * nPercentage) / 100
+  }
+
+  return 0
+}

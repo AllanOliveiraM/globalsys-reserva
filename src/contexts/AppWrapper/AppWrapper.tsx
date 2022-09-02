@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 import { ThemeProvider } from '@granosafe/design-system'
 
 import { LocaleProvider } from 'contexts/LocaleContext'
+import { ShoppingBagProvider } from 'contexts/ShoppingBagContext'
 
 import { customTheme } from 'theme/theme'
 
@@ -12,7 +13,9 @@ type AppWrapperProps = {
 
 const AppWrapper = ({ children }: AppWrapperProps) => (
   <ThemeProvider theme={customTheme}>
-    <LocaleProvider>{children}</LocaleProvider>
+    <LocaleProvider>
+      <ShoppingBagProvider>{children}</ShoppingBagProvider>
+    </LocaleProvider>
   </ThemeProvider>
 )
 

@@ -2,5 +2,14 @@
   "content.label.home": "Home",
   "content.label.feminine": "Feminine",
   "content.label.masculine": "Masculine",
-  "content.label.accessories": "Accessories"
+  "content.label.accessories": "Accessories",
+  "content.label.i_want": "I Want!",
+  "content.label.remove": "Remove",
+  "content.title.your_bag_content": "Your bag content",
+  "content.title.total_price": "Total price:",
+  "content.title.total_discount": "Total discount",
+  "content.title.finish": "Finish",
+  "content.title.nothing_here": "It's kind of empty in this place... Add a few things to your bag, you'll see them here :)",
+  "prduct.dialog.added_to_bag": "Item successfully added to your bag.",
+  "prduct.dialog.removed_from_bag": "Item successfully removed from your bag."
 }

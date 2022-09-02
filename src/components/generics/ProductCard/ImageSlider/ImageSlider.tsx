@@ -46,8 +46,6 @@ const ImageSlider = ({ product }: ImageSliderProps) => {
           }}
           key={image.key}
           src={image.src}
-          width='440'
-          height='615'
           alt={product.name}
           layout='fill'
           priority

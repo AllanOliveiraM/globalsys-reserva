@@ -20,6 +20,8 @@ const ProductFavoriteBadge = ({ product }: ProductFavoriteBadgeProps) => {
       data-product-slide
       {...(isActive && { 'data-product-slide-active': true })}
       data-product-favorite-icon
+      bg='rgba(255, 255, 255, 0.4)'
+      borderRadius='50%'
     >
       <Button
         variant='ghost'
@@ -27,9 +29,9 @@ const ProductFavoriteBadge = ({ product }: ProductFavoriteBadgeProps) => {
         onClick={() => setIsActive(prevState => !prevState)}
       >
         {isActive ? (
-          <HiHeart size='2.4rem' color='white' />
+          <HiHeart size='2.4rem' color='black' />
         ) : (
-          <HiOutlineHeart size='2.4rem' color='white' />
+          <HiOutlineHeart size='2.4rem' color='black' />
         )}
       </Button>
     </Box>
