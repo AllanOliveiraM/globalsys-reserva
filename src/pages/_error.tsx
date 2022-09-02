@@ -1,9 +1,11 @@
 import * as Sentry from '@sentry/nextjs'
 
-const ErrorComponent = () => <p>temp error page</p>
+import Error from 'views/Error'
+
+const ErrorComponent = () => <Error />
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-ErrorComponent.getInitialProps = async (contextData: any) => {
+export const getInitialProps = async (contextData: any) => {
   await Sentry.captureUnderscoreErrorException(contextData)
 
   return {}

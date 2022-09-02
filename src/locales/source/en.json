@@ -7,11 +7,15 @@
   "content.label.i_want": "I Want!",
   "content.label.remove": "Remove",
   "content.title.your_bag_content": "Your bag content",
+  "content.label.favorites": "Favorites",
   "content.title.total_price": "Total price:",
   "content.title.total_discount": "Total discount",
   "content.title.finish": "Finish",
   "content.title.nothing_here_bag": "It's kind of empty in this place. Add a few things to your bag, you'll see them here :)",
   "content.title.nothing_here_favorites": "It's kind of empty in this place. Add a few things to your favorites, you'll see them here :)",
   "prduct.dialog.added_to_bag": "Item successfully added to your bag.",
-  "prduct.dialog.removed_from_bag": "Item successfully removed from your bag."
+  "prduct.dialog.removed_from_bag": "Item successfully removed from your bag.",
+  "internal.dialog.server_error": "An internal server error has occurred and the error data has already been automatically sent to support. Try again later.",
+  "internal.dialog.offline": "Apparently you are offline. Check your internet connection and try again.",
+  "internal.dialog.not_found": "The resource you are trying to access either does not exist or has been permanently moved. But you can still browse amazing pieces by browsing the rest of the site."
 }

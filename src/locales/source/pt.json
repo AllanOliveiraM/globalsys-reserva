@@ -6,6 +6,7 @@
   "content.label.accessories": "Acessórios",
   "content.label.i_want": "Quero!",
   "content.label.remove": "Remover",
+  "content.label.favorites": "Favoritos",
   "content.title.your_bag_content": "Conteúdo da sua bolsa",
   "content.title.total_price": "Valor total:",
   "content.title.total_discount": "Desconto total:",
@@ -13,5 +14,8 @@
   "content.title.nothing_here_bag": "Está meio vazio neste lugar... Adicione algumas coisinhas na sua sacola, você as verá aqui :)",
   "content.title.nothing_here_favorites": "Está meio vazio neste lugar... Adicione algumas coisinhas nos favoritos, você as verá aqui :)",
   "prduct.dialog.added_to_bag": "Item adicionado com sucesso na sua sacola.",
-  "prduct.dialog.removed_from_bag": "Item removido com sucesso da sua sacola."
+  "prduct.dialog.removed_from_bag": "Item removido com sucesso da sua sacola.",
+  "internal.dialog.server_error": "Ocorreu um erro interno do servidor e os dados do erro já foram enviados automaticamente para o suporte. Tente novemente mais tarde.",
+  "internal.dialog.offline": "Aparentemente você está offline. Verifique a sua conexão com a internet e tente novamente.",
+  "internal.dialog.not_found": "O recurso que você está tentando acessar não existe ou foi movido permanentemente. Mas você ainda pode vasculhar peças incríveis navegando pelo restante do site."
 }
