@@ -9,8 +9,8 @@ const commonPlugins = [
 ]
 
 const testPlugins =
-  process.env.KEEP_CYPRESS_TEST_KEYS !== 'true'
-    ? [['react-remove-properties', { properties: ['data-cy'] }]]
+  process.env.KEEP_TEST_KEYS !== 'true'
+    ? [['react-remove-properties', { properties: ['data-cy', 'data-testid'] }]]
     : []
 
 const plugins =
