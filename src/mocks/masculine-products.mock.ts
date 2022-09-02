@@ -9,19 +9,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068656-1200-auto?v=637648975461100000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/1/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068667-1200-auto?v=637648975461730000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/1/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068675-1200-auto?v=637648975462330000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/1/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068688-1200-auto?v=637648975466400000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/1/4.webp',
       },
     ],
   },
@@ -33,19 +33,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077672-1200-auto?v=637941227529500000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/2/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077621-1200-auto?v=637941227515570000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/2/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077630-1200-auto?v=637941227516500000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/2/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077666-1200-auto?v=637941227526500000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/2/4.webp',
       },
     ],
   },
@@ -57,19 +57,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6760459-1200-auto?v=637909205006000000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/3/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6760460-1200-auto?v=637909205007100000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/3/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6760462-1200-auto?v=637909205012730000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/3/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6760463-1200-auto?v=637909205014130000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/3/4.webp',
       },
     ],
   },
@@ -81,19 +81,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6730329-800-auto?v=637879849047870000&width=800&height=auto&aspect=true',
+        src: '/images/app/products/masculine/4/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6730328-800-auto?v=637879849045830000&width=800&height=auto&aspect=true',
+        src: '/images/app/products/masculine/4/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6730330-800-auto?v=637879849048970000&width=800&height=auto&aspect=true',
+        src: '/images/app/products/masculine/4/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6730327-800-auto?v=637879849036900000&width=800&height=auto&aspect=true',
+        src: '/images/app/products/masculine/4/4.webp',
       },
     ],
   },
@@ -105,19 +105,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763684-1200-auto?v=637909241131700000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763681-1200-auto?v=637909241115730000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763682-1200-auto?v=637909241118570000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763683-1200-auto?v=637909241120130000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/4.webp',
       },
     ],
   },
@@ -129,19 +129,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6771442-1200-auto?v=637913409799600000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/6/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6771443-1200-auto?v=637913409802270000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/6/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6771444-1200-auto?v=637913409803030000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/6/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6771447-1200-auto?v=637913409804430000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/6/4.webp',
       },
     ],
   },
@@ -153,19 +153,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6772732-1200-auto?v=637913456565100000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/7/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6772733-1200-auto?v=637913456566370000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/7/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6772734-1200-auto?v=637913456579030000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/7/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6772736-1200-auto?v=637913456582630000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/7/4.webp',
       },
     ],
   },
@@ -177,19 +177,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684004-1200-auto?v=637826456599470000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684003-1200-auto?v=637826456591600000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684005-1200-auto?v=637826456601000000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/3.jpeg',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684007-1200-auto?v=637826456603030000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/4.webp',
       },
     ],
   },

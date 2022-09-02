@@ -28,7 +28,15 @@ const NavButton = ({ text, href, ...props }: NavButtonProps) => {
           data-cy={slugify(text)}
           {...props}
         >
-          <Text fontSize='1.2rem !important' textTransform='uppercase' fontWeight='bold'>
+          <Text
+            fontSize={{
+              _: '1.8rem !important',
+              sm: '1.2rem !important',
+              lg: '1.4rem !important',
+            }}
+            textTransform='uppercase'
+            fontWeight='bold'
+          >
             {text}
           </Text>
         </CustomButton>

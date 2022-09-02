@@ -32,7 +32,7 @@ const ProductDiscountBadge = ({ product }: ProductDiscountBadgeProps) => {
           bg='white'
         >
           <Text variant='caption' fontWeight='bold'>
-            {product.discountPercent?.toFixed(2) || 0}% OFF
+            {product.discountPercent?.toFixed(0) || 0}% OFF
           </Text>
         </Box>
       </motion.div>

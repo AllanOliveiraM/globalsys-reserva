@@ -36,7 +36,7 @@ export const ShoppingBagProvider = ({ children }: ShoppingBagProviderProps) => {
 
   const removeProduct = useCallback(
     (product: Product) => {
-      // deep copy of currentProductsInBag?.bag to prevent referential set errors
+      // deep copy of currentProductsInBag to prevent referential set errors
       const newBag = (
         currentProductsInBag ? JSON.parse(JSON.stringify(currentProductsInBag)) : null
       ) as typeof currentProductsInBag

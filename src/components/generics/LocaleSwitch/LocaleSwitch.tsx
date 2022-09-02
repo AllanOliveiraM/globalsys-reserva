@@ -1,16 +1,18 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useRef, useState } from 'react'
 import { BiWorld } from 'react-icons/bi'
 
 import { A, Box, Card, Flex, useOnClickOutside, Text } from '@granosafe/design-system'
 import { useTranslate } from 'hooks'
-import { HomeRoutes } from 'routes/home'
 
 import FadeIn from 'components/generics//FadeIn'
 
 import ActionButton from '../ActionButton'
 
 const LocaleSwitch = () => {
+  const router = useRouter()
+
   const { currentLocale } = useTranslate()
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -40,7 +42,7 @@ const LocaleSwitch = () => {
           gap='1.2rem'
           p='1.2rem !important'
         >
-          <Link href={HomeRoutes.ROOT} locale='pt' passHref>
+          <Link href={router.pathname} locale='pt' passHref>
             <A
               onClick={() => setIsOpen(false)}
               color={currentLocale === 'pt' ? 'primary' : 'black'}
@@ -48,7 +50,7 @@ const LocaleSwitch = () => {
               Português
             </A>
           </Link>
-          <Link href={HomeRoutes.ROOT} locale='en' passHref>
+          <Link href={router.pathname} locale='en' passHref>
             <A
               onClick={() => setIsOpen(false)}
               color={currentLocale === 'en' ? 'primary' : 'black'}

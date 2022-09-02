@@ -105,9 +105,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         justifyContent='space-between'
         w='100%'
         h='unset'
-        flexDirection={{ _: 'column', sm: 'row' }}
+        flexDirection={{ _: 'column', md: 'row' }}
       >
-        <Box mt='1.2rem' mb='1.8rem'>
+        <Box mt='1.2rem' mb='1.8rem' minHeight={{ _: '8rem', md: 'unset' }}>
           <Text fontSize='1.5rem !important' fontWeight='bold'>
             {product.name}
           </Text>
@@ -116,7 +116,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </Box>
 
         <Button
-          mb={{ _: '2.4rem', sm: '0' }}
+          mb={{ _: '2.4rem', md: '0' }}
+          ml='1.2rem'
           data-product-slide
           data-product-permanet-show
           variant='ghost'

@@ -2,71 +2,195 @@ import { Product } from 'models/products'
 
 export const products: Product[] = [
   {
-    id: 1,
-    name: 'Camiseta',
-    price: 23,
+    id: 17,
+    name: 'Mochila Office',
+    price: 799,
+    discountPercent: 30,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/17/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/17/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/17/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/17/4.webp',
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: 'Mochila Kenya Couro',
+    price: 1999,
+    discountPercent: 24,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/18/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/18/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/18/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/18/4.webp',
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: 'Mochila Tribeca',
+    price: 399,
     discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/19/1.png',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/19/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/19/3.png',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/19/4.webp',
+      },
+    ],
   },
   {
-    id: 2,
-    name: 'Camiseta 2',
-    price: 23,
+    id: 20,
+    name: 'Mochila Office',
+    price: 799,
     discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/20/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/20/2.jpeg',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/20/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/20/4.webp',
+      },
+    ],
   },
   {
-    id: 3,
-    name: 'Camiseta 3',
-    price: 23,
-    discountPercent: 10,
-  },
-  {
-    id: 4,
-    name: 'Camiseta 3',
-    price: 23,
-    discountPercent: 10,
-  },
-  {
-    id: 5,
-    name: 'Camiseta 3',
-    price: 23,
+    id: 21,
+    name: 'Mochila Bold',
+    price: 679,
     discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/21/1.png',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/21/2.png',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/21/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/21/4.webp',
+      },
+    ],
   },
   {
-    id: 6,
-    name: 'Camiseta 3',
-    price: 23,
+    id: 22,
+    name: 'Mochila Wing',
+    price: 599,
     discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/22/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/22/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/22/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/22/4.webp',
+      },
+    ],
   },
   {
-    id: 7,
-    name: 'Camiseta 3',
-    price: 23,
-    discountPercent: null,
+    id: 23,
+    name: 'Mochila Bold',
+    price: 679,
+    discountPercent: 40,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/23/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/23/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/23/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/23/4.webp',
+      },
+    ],
   },
   {
-    id: 8,
-    name: 'Camiseta 3',
-    price: 23,
-    discountPercent: 5,
+    id: 24,
+    name: 'Mochila Tribeca',
+    price: 399,
+    discountPercent: 30,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/24/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/24/2.png',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/24/3.png',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/24/4.webp',
+      },
+    ],
   },
-].map(prod => ({
-  ...prod,
-  imageSrc: [
-    {
-      key: 1,
-      src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068656-1200-auto?v=637648975461100000&width=1200&height=auto&aspect=true',
-    },
-    {
-      key: 2,
-      src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068667-1200-auto?v=637648975461730000&width=1200&height=auto&aspect=true',
-    },
-    {
-      key: 3,
-      src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068675-1200-auto?v=637648975462330000&width=1200&height=auto&aspect=true',
-    },
-    {
-      key: 4,
-      src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6068688-1200-auto?v=637648975466400000&width=1200&height=auto&aspect=true',
-    },
-  ],
-}))
+]

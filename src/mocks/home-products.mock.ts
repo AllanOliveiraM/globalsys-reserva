@@ -9,19 +9,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763684-1200-auto?v=637909241131700000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763681-1200-auto?v=637909241115730000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763682-1200-auto?v=637909241118570000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6763683-1200-auto?v=637909241120130000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/5/4.webp',
       },
     ],
   },
@@ -33,19 +33,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684004-1200-auto?v=637826456599470000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684003-1200-auto?v=637826456591600000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684005-1200-auto?v=637826456601000000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/3.jpeg',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6684007-1200-auto?v=637826456603030000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/masculine/8/4.webp',
       },
     ],
   },
@@ -57,19 +57,19 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7048345-1200-auto?v=637938542165900000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/15/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7048351-1200-auto?v=637938542168700000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/15/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7048362-1200-auto?v=637938542177600000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/15/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/7048364-1200-auto?v=637938542178230000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/15/4.webp',
       },
     ],
   },
@@ -81,19 +81,115 @@ export const products: Product[] = [
     imageSrc: [
       {
         key: 1,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6875610-1200-auto?v=637932891060830000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/16/1.webp',
       },
       {
         key: 2,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6875605-1200-auto?v=637932891047000000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/16/2.webp',
       },
       {
         key: 3,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6875606-1200-auto?v=637932891056130000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/16/3.webp',
       },
       {
         key: 4,
-        src: 'https://lojausereserva.vtexassets.com/arquivos/ids/6875607-1200-auto?v=637932891056430000&width=1200&height=auto&aspect=true',
+        src: '/images/app/products/feminine/16/4.webp',
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: 'Blusa Mg Longa Brilho',
+    price: 299,
+    discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/feminine/14/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/feminine/14/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/feminine/14/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/feminine/14/4.webp',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Jaqueta Travel',
+    price: 1599,
+    discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/masculine/6/1.webp',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/masculine/6/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/masculine/6/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/masculine/6/4.webp',
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: 'Mochila Tribeca',
+    price: 399,
+    discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/19/1.png',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/19/2.webp',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/19/3.png',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/19/4.webp',
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: 'Mochila Bold',
+    price: 679,
+    discountPercent: null,
+    imageSrc: [
+      {
+        key: 1,
+        src: '/images/app/products/accessories/21/1.png',
+      },
+      {
+        key: 2,
+        src: '/images/app/products/accessories/21/2.png',
+      },
+      {
+        key: 3,
+        src: '/images/app/products/accessories/21/3.webp',
+      },
+      {
+        key: 4,
+        src: '/images/app/products/accessories/21/4.webp',
       },
     ],
   },

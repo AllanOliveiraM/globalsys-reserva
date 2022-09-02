@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect } from 'react'
 import { AiFillCloseCircle } from 'react-icons/ai'
+import { FiX } from 'react-icons/fi'
 import { HiOutlineShoppingBag, HiShoppingBag } from 'react-icons/hi'
 
 import { Flex, Box, Button, Text, Modal, Card } from '@granosafe/design-system'
@@ -26,6 +27,9 @@ const Bag = () => {
   const isClient = useClientSide()
 
   const bag = ShoppingBagContext.useSelector(state => state?.bag || null)
+  const removeProduct = ShoppingBagContext.useSelector(
+    state => state?.removeProduct || null
+  )
 
   const controls = useAnimationControls()
 
@@ -90,69 +94,84 @@ const Bag = () => {
                   display='grid'
                   gridTemplateColumns={{ _: '1fr', lg: '1fr 1fr' }}
                   p='0 2.4rem'
-                  minHeight='30vh'
+                  minHeight='40vh'
                 >
                   {bag.map(product => {
                     const src = product?.imageSrc?.[0]?.src
 
                     return (
-                      <Flex
-                        as={Card}
-                        key={product.id}
-                        w='100%'
-                        justifyContent='space-between'
-                        maxHeight='10rem'
-                        variant='vAlign'
-                      >
-                        <Box as='li'>
-                          <Text
-                            maxWidth={{ _: '40vw', lg: '26rem' }}
-                            textOverflow='ellipsis'
-                            whiteSpace='nowrap'
-                            overflow='hidden'
+                      <Box as='li' key={product.id}>
+                        <Flex
+                          as={Card}
+                          p='1.8rem 1.8rem 1.8rem 0rem !important'
+                          w='100%'
+                          justifyContent='space-between'
+                          maxHeight='12rem'
+                          variant='vAlign'
+                        >
+                          <Button
+                            ml='1.2rem'
+                            mr='0.8rem'
+                            variant='ghost'
+                            onClick={() => {
+                              if (removeProduct) {
+                                removeProduct(product)
+                              }
+                            }}
                           >
-                            {product.name}
-                          </Text>
+                            <FiX size='3rem' color={customTheme.colors.primary} />
+                          </Button>
 
-                          <ProductInfo product={product} />
-                        </Box>
-                        {src ? (
-                          <Box position='relative' w='6rem' h='9rem'>
-                            <Image
-                              style={{ borderRadius: '9px' }}
-                              src={src}
-                              alt={product.name}
-                              layout='fill'
-                              priority
-                              objectFit='cover'
-                              objectPosition='top'
-                              draggable={false}
-                            />
+                          <Box>
+                            <Text
+                              maxWidth={{ _: '40vw', lg: '26rem' }}
+                              textOverflow='ellipsis'
+                              whiteSpace='nowrap'
+                              overflow='hidden'
+                            >
+                              {product.name}
+                            </Text>
+
+                            <ProductInfo product={product} />
                           </Box>
-                        ) : (
-                          <Box position='relative' w='6rem' h='9rem'>
-                            <Image
-                              style={{ borderRadius: '9px' }}
-                              src='/images/app/noimg.png'
-                              alt={product.name}
-                              layout='fill'
-                              priority
-                              objectFit='cover'
-                              objectPosition='top'
-                              draggable={false}
-                            />
-                          </Box>
-                        )}
-                      </Flex>
+                          {src ? (
+                            <Box position='relative' w='6rem' h='9rem'>
+                              <Image
+                                style={{ borderRadius: '9px' }}
+                                src={src}
+                                alt={product.name}
+                                layout='fill'
+                                priority
+                                objectFit='cover'
+                                objectPosition='top'
+                                draggable={false}
+                              />
+                            </Box>
+                          ) : (
+                            <Box position='relative' w='6rem' h='9rem'>
+                              <Image
+                                style={{ borderRadius: '9px' }}
+                                src='/images/app/noimg.png'
+                                alt={product.name}
+                                layout='fill'
+                                priority
+                                objectFit='cover'
+                                objectPosition='top'
+                                draggable={false}
+                              />
+                            </Box>
+                          )}
+                        </Flex>
+                      </Box>
                     )
                   })}
                 </Flex>
               ) : (
-                <Flex flexDirection='column' variant='center' minHeight='40vh'>
+                <Flex flexDirection='column' variant='center' minHeight='42.5vh'>
                   <Flex variant='center' flexDirection='column' gap='2.4rem'>
                     <CatAndGirl />
                     <Text maxWidth={{ _: '20rem', lg: '40rem' }} textAlign='center'>
-                      {t('content.title.nothing_here')}
+                      {t('content.title.nothing_here_bag')}
                     </Text>
                   </Flex>
                 </Flex>

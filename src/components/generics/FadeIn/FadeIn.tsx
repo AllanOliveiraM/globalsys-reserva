@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 type FadeInProps = {
   children: ReactNode
   show?: boolean
+  time?: number
 }
 
 const motionVariants = {
@@ -20,14 +21,14 @@ const motionVariants = {
   },
 }
 
-const FadeIn = ({ children, show }: FadeInProps) => {
+const FadeIn = ({ children, show, time }: FadeInProps) => {
   if (typeof show === 'boolean') {
     return (
       <motion.div
         initial='hidden'
         animate={show ? 'visible' : 'hidden'}
         variants={motionVariants}
-        transition={{ duration: 0.16 }}
+        transition={{ duration: time }}
       >
         {children}
       </motion.div>
@@ -38,7 +39,7 @@ const FadeIn = ({ children, show }: FadeInProps) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.16 }}
+      transition={{ duration: time }}
     >
       {children}
     </motion.div>
@@ -47,6 +48,7 @@ const FadeIn = ({ children, show }: FadeInProps) => {
 
 FadeIn.defaultProps = {
   show: undefined,
+  time: 0.16,
 }
 
 export default FadeIn

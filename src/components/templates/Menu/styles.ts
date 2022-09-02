@@ -24,7 +24,7 @@ export const Container = styled(Box)`
     z-index: 10;
   }
 
-  @media (min-width: md) {
-    display: none;
+  @media (min-width: sm) {
+    display: none !important;
   }
 `

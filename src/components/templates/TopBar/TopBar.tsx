@@ -1,13 +1,11 @@
 import Link from 'next/link'
 import { FiMenu } from 'react-icons/fi'
-import { HiOutlineHeart } from 'react-icons/hi'
 
 import { Flex, A, Box, Button } from '@granosafe/design-system'
 import { useTranslate } from 'hooks'
 import { HomeRoutes } from 'routes/home'
 import { MarketplaceRoutes } from 'routes/marketplace'
 
-import ActionButton from 'components/generics/ActionButton'
 import LocaleSwitch from 'components/generics/LocaleSwitch'
 import NavButton from 'components/generics/NavButton'
 import BrandFullLogo from 'components/icons/BrandFullLogo'
@@ -19,6 +17,7 @@ import { TOP_BAR_HEIGHT } from 'constants/layout'
 import { customTheme } from 'theme/theme'
 
 import Bag from './Bag'
+import Favorites from './Favorites'
 
 const TopBar = () => {
   const { t } = useTranslate()
@@ -63,7 +62,12 @@ const TopBar = () => {
             </Link>
           </Box>
 
-          <Flex as='ul' ml='-0.8rem' gap='1.4rem' display={{ _: 'none', sm: 'flex' }}>
+          <Flex
+            as='ul'
+            ml='-0.8rem'
+            gap={{ _: '0.4rem', md: '1.2rem' }}
+            display={{ _: 'none', sm: 'flex' }}
+          >
             <NavButton href={HomeRoutes.ROOT} text={t('content.label.home')} />
             <NavButton
               href={MarketplaceRoutes.FEMININE}
@@ -83,9 +87,7 @@ const TopBar = () => {
         <Flex gap='1rem'>
           <LocaleSwitch />
 
-          <ActionButton>
-            <HiOutlineHeart size='2rem' />
-          </ActionButton>
+          <Favorites />
 
           <Bag />
         </Flex>

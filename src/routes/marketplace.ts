@@ -4,4 +4,6 @@ export const MarketplaceRoutes = {
   FEMININE: '/marketplace/feminine',
   MASCULINE: '/marketplace/masculine',
   ACCESSORIES: '/marketplace/accessories',
+
+  FAVORITES: '/marketplace/favorites',
 }

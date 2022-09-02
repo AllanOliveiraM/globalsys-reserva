@@ -10,7 +10,8 @@
   "content.title.total_price": "Total price:",
   "content.title.total_discount": "Total discount",
   "content.title.finish": "Finish",
-  "content.title.nothing_here": "It's kind of empty in this place... Add a few things to your bag, you'll see them here :)",
+  "content.title.nothing_here_bag": "It's kind of empty in this place. Add a few things to your bag, you'll see them here :)",
+  "content.title.nothing_here_favorites": "It's kind of empty in this place. Add a few things to your favorites, you'll see them here :)",
   "prduct.dialog.added_to_bag": "Item successfully added to your bag.",
   "prduct.dialog.removed_from_bag": "Item successfully removed from your bag."
 }

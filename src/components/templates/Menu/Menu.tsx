@@ -85,7 +85,7 @@ const Menu = () => {
         className={styles.motionBackground}
       >
         <ContainerBackground
-          display={{ _: 'initial', md: 'none' }}
+          display={{ _: 'initial', sm: 'none' }}
           onClick={handleCloseMenu}
           {...swipeBackgroundCloseHandlers}
         />
