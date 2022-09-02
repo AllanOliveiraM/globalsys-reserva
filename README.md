@@ -228,7 +228,7 @@ Looks for code integrity errors in all files without changing them, reporting po
 
 <br /><br />
 
-### Test the application (not implemented yet)
+### Test the application
 
 ```sh
 yarn test
