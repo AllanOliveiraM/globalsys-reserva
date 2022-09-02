@@ -2,7 +2,7 @@
 
 An incredible test from a nice company.
 
-See the production version of this app [here](https://reserva-frontend.vercel.app/)!
+See the production version of this app [here](https://reserva.nexpy.com.br/)!
 
 ## Intro
 
@@ -27,6 +27,8 @@ The decisive factor to avoid these possible features is that I didn't have
 an API ready, and a database to manage relationships and data in general.
 
 This would take a long time to implement, so I went to the front-end :)
+
+Didn't have time to write satisfactory unit test coverage, but e2e tests I getted to write enough :)
 
 ## Installation
 
@@ -91,7 +93,7 @@ In this project you can find several interesting technologies, such as:
 
 - Jest
 
-- Cypress (other project)
+- Cypress [(other project)](https://github.com/AllanOliveiraM/reserva-e2e)
 
 - Mobile gesture control
 

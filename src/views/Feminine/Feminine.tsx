@@ -21,7 +21,7 @@ const Feminine = () => {
         </title>
       </Head>
       <FadeIn>
-        <Box p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
+        <Box data-cy='page-feminine' p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
           <ProductsView products={products} />
         </Box>
       </FadeIn>

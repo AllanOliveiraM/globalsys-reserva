@@ -49,7 +49,12 @@ const ProductFavoriteBadge = ({ product }: ProductFavoriteBadgeProps) => {
       bg='rgba(255, 255, 255, 0.4)'
       borderRadius='50%'
     >
-      <Button variant='ghost' p='0.4rem' onClick={handleFavoriteClick}>
+      <Button
+        variant='ghost'
+        p='0.4rem'
+        data-cy={`add-favorite-${product.id}`}
+        onClick={handleFavoriteClick}
+      >
         {isSelected ? (
           <HiHeart size='2.4rem' color='black' />
         ) : (

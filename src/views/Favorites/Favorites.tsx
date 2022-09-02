@@ -26,7 +26,7 @@ const Favorites = () => {
         </title>
       </Head>
 
-      <Box p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
+      <Box data-cy='page-favorites' p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
         <ProductsView products={favoritesContext?.favorites || []} />
       </Box>
 

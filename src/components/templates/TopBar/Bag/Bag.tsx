@@ -70,17 +70,21 @@ const Bag = () => {
             <Head key='modal'>
               <style>
                 {`
-                html {
-                  overflow: hidden;
-                }
-              `}
+                  html {
+                    overflow: hidden;
+                  }
+                `}
               </style>
             </Head>
           ) : null}
           <Box w='90rem' maxWidth='100%' maxHeight={`calc(80vh - ${TOP_BAR_HEIGHT})`}>
             <Flex justifyContent='space-between' w='100%'>
               <Text variant='subheading'>{t('content.title.your_bag_content')}</Text>
-              <Button variant='ghost' onClick={() => setIsOpen(false)}>
+              <Button
+                variant='ghost'
+                onClick={() => setIsOpen(false)}
+                data-cy='close-bag'
+              >
                 <AiFillCloseCircle size='3rem' color={customTheme.colors.grey500} />
               </Button>
             </Flex>
@@ -111,6 +115,7 @@ const Bag = () => {
                         >
                           <Flex>
                             <Button
+                              data-cy={`remove-product-${product.id}`}
                               ml='1.2rem'
                               mr='0.8rem'
                               variant='ghost'
@@ -214,7 +219,11 @@ const Bag = () => {
       )}
     >
       {({ setIsOpen, excludeRef }) => (
-        <ActionButton onClick={() => setIsOpen(prevState => !prevState)} ref={excludeRef}>
+        <ActionButton
+          onClick={() => setIsOpen(prevState => !prevState)}
+          ref={excludeRef}
+          data-cy='bag-button'
+        >
           {isClient && (
             <>
               {bag?.length ? (
