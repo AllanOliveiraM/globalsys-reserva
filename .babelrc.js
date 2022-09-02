@@ -8,11 +8,6 @@ const commonPlugins = [
   ['module-resolver', { root: ['./src'] }],
 ]
 
-const testPlugins =
-  process.env.KEEP_TEST_KEYS === 'true'
-    ? [['react-remove-properties', { properties: ['data-cy', 'data-testid'] }]]
-    : []
-
 const plugins =
   process.env.NODE_ENV === 'production'
     ? [...commonPlugins, ...productionPlugins]
@@ -20,5 +15,5 @@ const plugins =
 
 module.exports = {
   presets: ['next/babel', '@babel/preset-typescript'],
-  plugins: [...plugins, ...testPlugins],
+  plugins: [...plugins],
 }

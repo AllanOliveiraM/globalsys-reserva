@@ -118,6 +118,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Button
           mb={{ _: '2.4rem', md: '0' }}
           ml='1.2rem'
+          data-cy={`put-in-bag-${product.id}`}
           data-product-slide
           data-product-permanet-show
           variant='ghost'

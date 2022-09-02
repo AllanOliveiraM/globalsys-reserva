@@ -24,7 +24,11 @@ const LocaleSwitch = () => {
 
   return (
     <Box position='relative' ref={localeSwitchRef}>
-      <ActionButton onClick={() => setIsOpen(prevState => !prevState)}>
+      <ActionButton
+        data-testid='language-button'
+        data-cy='language-button'
+        onClick={() => setIsOpen(prevState => !prevState)}
+      >
         <Flex variant='vAlign' gap='0.4rem'>
           <Text textTransform='uppercase' variant='caption'>
             {currentLocale || ''}

@@ -7,7 +7,7 @@ import { products } from 'mocks/home-products.mock'
 
 const Home = () => (
   <FadeIn>
-    <Box p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
+    <Box data-cy='page-home' p={{ _: '0 2.4rem', xl: '0 6.4rem' }}>
       <ProductsView products={products} />
     </Box>
   </FadeIn>
