@@ -37,7 +37,6 @@ export default class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <div id='full-page-user-loader' />
           <NextScript />
         </body>
       </Html>

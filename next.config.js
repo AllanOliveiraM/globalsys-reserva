@@ -70,6 +70,9 @@ const nextConfig = {
     locales: AVAILABLE_LOCALES,
     defaultLocale: DEFAULT_LOCALE,
   },
+  images: {
+    domains: ['lojausereserva.vtexassets.com'],
+  },
 }
 
 module.exports = plugins.reduce((acc, plugin) => plugin(acc), {

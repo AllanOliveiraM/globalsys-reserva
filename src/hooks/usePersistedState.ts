@@ -14,7 +14,17 @@ export const usePersistedState = <T extends Record<string, unknown> | null>(
 
       if (localStorageItem === null) return defaultValue
 
-      return JSON.parse(localStorageItem)
+      if (defaultValue !== null) {
+        const newValue = JSON.stringify(defaultValue)
+
+        if (newValue !== localStorageItem) {
+          localStorage.setItem(localStorageKey, newValue)
+
+          return defaultValue
+        }
+      }
+
+      return JSON.parse(localStorageItem) as T
     } catch {
       return defaultValue
     }
@@ -43,5 +53,5 @@ export const usePersistedState = <T extends Record<string, unknown> | null>(
     setValue(findDefaultValue())
   }, [findDefaultValue, localStorageKey])
 
-  return [value, setPersistedValue]
+  return [value, setPersistedValue] as [T, (newValue: T) => void]
 }

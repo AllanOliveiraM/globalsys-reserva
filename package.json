@@ -23,8 +23,7 @@
     "build:storybook": "build-storybook"
   },
   "dependencies": {
-    "@granosafe/design-system": "^0.1.66",
-    "@hookform/resolvers": "^2.9.7",
+    "@granosafe/design-system": "^0.1.69",
     "@mdx-js/loader": "^2.1.3",
     "@nexpy/react-easy-context-api": "^1.0.2",
     "@next/bundle-analyzer": "^12.2.5",
@@ -32,23 +31,19 @@
     "@sentry/nextjs": "^7.12.0",
     "@xstyled/styled-components": "^3.5.1",
     "framer-motion": "^7.2.1",
+    "is-number": "^7.0.0",
     "next": "^12.2.5",
     "next-pwa": "^5.6.0",
-    "nookies": "^2.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.34.2",
     "react-icons": "^4.3.1",
     "react-swipeable": "^7.0.0",
     "react-toastify": "^9.0.8",
-    "react-top-loading-bar": "^2.1.0",
     "sass": "^1.54.8",
     "scheduler": "^0.23.0",
     "sharp": "^0.30.7",
     "slugify": "^1.6.5",
-    "styled-components": "^5.3.3",
-    "swr": "^1.2.2",
-    "yup": "^0.32.11"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -72,6 +67,7 @@
     "@testing-library/react": "^13.3.0",
     "@types/cookie": "^0.5.1",
     "@types/file-saver": "^2.0.5",
+    "@types/is-number": "^7.0.3",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.7.14",
     "@types/react": "^18.0.18",
@@ -101,10 +97,12 @@
     "eslint-plugin-react": "^7.31.1",
     "husky": "^8.0.1",
     "jest": "^29.0.1",
+    "jest-environment-jsdom": "^29.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
     "typescript": "4.8.2"
   },
   "resolutions": {

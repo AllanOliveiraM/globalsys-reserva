@@ -1,5 +1,3 @@
-import { Box } from '@granosafe/design-system'
-
-const Home = () => <Box>temp Home page</Box>
+import Home from 'views/Home'
 
 export default Home

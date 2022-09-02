@@ -1,7 +1,10 @@
-import { AppProps as NextAppProps } from 'next/app'
+import { AppProps } from 'next/app'
 import { ToastContainer } from 'react-toastify'
 
 import Meta from 'components/common/Meta'
+import PageWrapper from 'components/common/PageWrapper'
+
+import AppWrapper from 'contexts/AppWrapper'
 
 import { Slide } from 'utils/toasts'
 
@@ -10,20 +13,15 @@ import GlobalStyle from 'theme/GlobalStyle'
 import 'react-toastify/dist/ReactToastify.css'
 import '@granosafe/design-system/dist/preflight.css'
 
-type AppProps = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  Component: any
-} & NextAppProps
-
-const App = ({ Component, pageProps }: AppProps) => {
-  return (
-    <>
-      <ToastContainer position='bottom-left' transition={Slide} />
-      <GlobalStyle />
-      <Meta />
+const App = ({ Component, pageProps }: AppProps) => (
+  <AppWrapper>
+    <ToastContainer position='bottom-left' transition={Slide} />
+    <GlobalStyle />
+    <Meta />
+    <PageWrapper>
       <Component {...pageProps} />
-    </>
-  )
-}
+    </PageWrapper>
+  </AppWrapper>
+)
 
 export default App

@@ -1,3 +1,3 @@
-const Offline = () => <p>temp offline page</p>
+import Offline from 'views/Offline'
 
 export default Offline

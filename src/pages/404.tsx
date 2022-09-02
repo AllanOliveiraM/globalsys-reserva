@@ -1,3 +1,3 @@
-const NotFound = () => <p>temp NotFound page</p>
+import NotFound from 'views/NotFound'
 
 export default NotFound
