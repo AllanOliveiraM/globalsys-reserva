@@ -14,7 +14,19 @@ manage the storage.
 My idea with the server was to use [SWR](https://swr.vercel.app/pt-BR) to do
 client-side caching and real-time product revalidation.
 
-This APP work offline!
+This APP work offline! (only production)
+
+_Important_: Because the test time was four days, I chose to simplify some
+parts of the natural flow of an e-commerce. The most impactful points are:
+
+- Unable to select garment size etc.
+- It is not possible to select the number of pieces of the same type that
+  the customer wants to buy.
+
+The decisive factor to avoid these possible features is that I didn't have
+an API ready, and a database to manage relationships and data in general.
+
+This would take a long time to implement, so I went to the front-end :)
 
 ## Installation
 
@@ -63,6 +75,9 @@ In this project you can find several interesting technologies, such as:
   [Docs](https://granosafe-design-system.netlify.app/)
 
   Open source library of components and styles based on @sxtyled/styled-components that I created initially to use in the company Granosafe, but that will be migrated to my Nexpy organization here on Github in the future.
+
+  By using this lib, I adopted the possibility of full styling via prop and the full reuse of even the most basic components.
+  This increases the scalability by a million times while making the final bundle much smaller.
 
 - [@nexpy/react-easy-context-api](https://github.com/nexpy-io/react-easy-context-api)
 

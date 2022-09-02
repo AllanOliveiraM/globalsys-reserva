@@ -109,31 +109,34 @@ const Bag = () => {
                           maxHeight='12rem'
                           variant='vAlign'
                         >
-                          <Button
-                            ml='1.2rem'
-                            mr='0.8rem'
-                            variant='ghost'
-                            onClick={() => {
-                              if (removeProduct) {
-                                removeProduct(product)
-                              }
-                            }}
-                          >
-                            <FiX size='3rem' color={customTheme.colors.primary} />
-                          </Button>
-
-                          <Box>
-                            <Text
-                              maxWidth={{ _: '40vw', lg: '26rem' }}
-                              textOverflow='ellipsis'
-                              whiteSpace='nowrap'
-                              overflow='hidden'
+                          <Flex>
+                            <Button
+                              ml='1.2rem'
+                              mr='0.8rem'
+                              variant='ghost'
+                              onClick={() => {
+                                if (removeProduct) {
+                                  removeProduct(product)
+                                }
+                              }}
                             >
-                              {product.name}
-                            </Text>
+                              <FiX size='3rem' color={customTheme.colors.primary} />
+                            </Button>
 
-                            <ProductInfo product={product} />
-                          </Box>
+                            <Box>
+                              <Text
+                                maxWidth={{ _: '28vw', lg: '26rem' }}
+                                textOverflow='ellipsis'
+                                whiteSpace='nowrap'
+                                overflow='hidden'
+                              >
+                                {product.name}
+                              </Text>
+
+                              <ProductInfo product={product} />
+                            </Box>
+                          </Flex>
+
                           {src ? (
                             <Box position='relative' w='6rem' h='9rem'>
                               <Image

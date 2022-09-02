@@ -9,7 +9,7 @@ const commonPlugins = [
 ]
 
 const testPlugins =
-  process.env.KEEP_TEST_KEYS !== 'true'
+  process.env.KEEP_TEST_KEYS === 'true'
     ? [['react-remove-properties', { properties: ['data-cy', 'data-testid'] }]]
     : []
 
