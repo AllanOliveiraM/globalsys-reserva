@@ -6,5 +6,7 @@ export const customTheme = {
     grey150: '#e2e2e2',
     grey200: '#d0d0d0',
     grey500: '#626262',
+
+    grey200t: 'rgba(98, 98, 98, 0.1)',
   },
 }

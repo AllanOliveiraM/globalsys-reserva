@@ -1,0 +1,24 @@
+.productCardContainer {
+  & [data-product-slide] {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
+  }
+
+  & [data-product-slide-active] {
+    opacity: 1;
+  }
+
+  &:hover [data-product-slide] {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    [data-product-favorite-icon] {
+      opacity: 1;
+    }
+  }
+}

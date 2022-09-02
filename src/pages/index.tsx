@@ -1,3 +1,3 @@
-const Home = () => <div>Home</div>
+import Home from 'views/Home'
 
 export default Home
