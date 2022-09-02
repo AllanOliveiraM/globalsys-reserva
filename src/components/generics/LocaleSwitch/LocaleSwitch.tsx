@@ -6,7 +6,7 @@ import { BiWorld } from 'react-icons/bi'
 import { A, Box, Card, Flex, useOnClickOutside, Text } from '@granosafe/design-system'
 import { useTranslate } from 'hooks'
 
-import FadeIn from 'components/generics//FadeIn'
+import FadeIn from 'components/generics/FadeIn'
 
 import ActionButton from '../ActionButton'
 

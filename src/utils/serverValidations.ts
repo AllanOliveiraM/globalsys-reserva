@@ -3,7 +3,13 @@ import { nextConfig } from 'constants/serverSettings'
 type ClientLanguages = string[]
 type ServerLanguages = string[] | undefined
 
+const DISABLE_SERVER_CHECKS = process.env.DISABLE_SERVER_CHECKS === 'true'
+
 export const validateServerDefaultLanguage = (DEFAULT_LOCALE_IDENTIFIER: string) => {
+  if (DISABLE_SERVER_CHECKS) {
+    return
+  }
+
   const serverDefaultLocale = nextConfig?.publicRuntimeConfig?.defaultLocale
 
   if (serverDefaultLocale !== DEFAULT_LOCALE_IDENTIFIER) {
@@ -22,6 +28,10 @@ export const validateServerLanguageMatch = (
   clientLanguages: ClientLanguages,
   callSignature: string
 ) => {
+  if (DISABLE_SERVER_CHECKS) {
+    return
+  }
+
   const clientAvailableLanguages = clientLanguages
   const serverAvailableLanguages = nextConfig?.publicRuntimeConfig
     ?.locales as ServerLanguages
