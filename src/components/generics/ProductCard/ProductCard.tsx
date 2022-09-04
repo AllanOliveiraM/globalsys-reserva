@@ -125,10 +125,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
           onClick={() => {
             if (!itsInTheBag) {
               shoppingBagContext?.addProduct(product)
-              toast.success(t('prduct.dialog.added_to_bag'))
+              toast.success(t('product.dialog.added_to_bag'))
             } else {
               shoppingBagContext?.removeProduct(product)
-              toast.info(t('prduct.dialog.removed_from_bag'))
+              toast.info(t('product.dialog.removed_from_bag'))
             }
           }}
         >
