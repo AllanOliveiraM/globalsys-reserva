@@ -1,4 +1,4 @@
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 import styled from '@xstyled/styled-components'
 
 export const ContainerBackground = styled(Box)`

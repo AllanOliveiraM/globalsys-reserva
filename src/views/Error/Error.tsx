@@ -1,4 +1,4 @@
-import { Flex, Text } from '@granosafe/design-system'
+import { Flex, Text } from '@nexpy/design-system'
 import { useTranslate } from 'hooks'
 
 import ErrorSign from 'components/icons/ErrorSign'

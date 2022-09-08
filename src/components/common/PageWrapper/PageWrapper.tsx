@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 
 import Menu from 'components/templates/Menu'
 import TopBar from 'components/templates/TopBar'

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useRef, useState } from 'react'
 import { BiWorld } from 'react-icons/bi'
 
-import { A, Box, Card, Flex, useOnClickOutside, Text } from '@granosafe/design-system'
+import { A, Box, Card, Flex, useOnClickOutside, Text } from '@nexpy/design-system'
 import { useTranslate } from 'hooks'
 
 import FadeIn from 'components/generics/FadeIn'

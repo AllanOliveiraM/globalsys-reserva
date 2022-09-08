@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { toast } from 'react-toastify'
 
-import { Box, Button, Flex, Text } from '@granosafe/design-system'
+import { Box, Button, Flex, Text } from '@nexpy/design-system'
 import { useClientSide, useTranslate } from 'hooks'
 import { Product } from 'models/products'
 

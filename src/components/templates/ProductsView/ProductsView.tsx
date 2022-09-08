@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Flex } from '@granosafe/design-system'
+import { Flex } from '@nexpy/design-system'
 import { Product } from 'models/products'
 
 import ProductCard from 'components/generics/ProductCard'

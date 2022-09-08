@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FiMenu } from 'react-icons/fi'
 
-import { Flex, A, Box, Button } from '@granosafe/design-system'
+import { Flex, A, Box, Button } from '@nexpy/design-system'
 import { useTranslate } from 'hooks'
 import { HomeRoutes } from 'routes/home'
 import { MarketplaceRoutes } from 'routes/marketplace'

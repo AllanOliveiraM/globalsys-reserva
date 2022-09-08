@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { FiX } from 'react-icons/fi'
 import { useSwipeable } from 'react-swipeable'
 
-import { Box, Button, Flex } from '@granosafe/design-system'
+import { Box, Button, Flex } from '@nexpy/design-system'
 import { motion } from 'framer-motion'
 import { useTranslate } from 'hooks'
 import { HomeRoutes } from 'routes/home'

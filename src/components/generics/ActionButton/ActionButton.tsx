@@ -1,6 +1,6 @@
 import { forwardRef, ReactNode } from 'react'
 
-import { Button, ButtonProps } from '@granosafe/design-system'
+import { Button, ButtonProps } from '@nexpy/design-system'
 
 type ActionButtonProps = {
   children: ReactNode

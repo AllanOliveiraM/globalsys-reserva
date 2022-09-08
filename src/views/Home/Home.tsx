@@ -1,4 +1,4 @@
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 
 import FadeIn from 'components/generics/FadeIn'
 import ProductsView from 'components/templates/ProductsView/ProductsView'
