@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Box, Flex, Text } from '@granosafe/design-system'
+import { Box, Flex, Text } from '@nexpy/design-system'
 import { useTranslate } from 'hooks'
 
 import FadeIn from 'components/generics/FadeIn'

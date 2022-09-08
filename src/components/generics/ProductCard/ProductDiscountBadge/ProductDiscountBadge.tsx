@@ -1,4 +1,4 @@
-import { Box, Text } from '@granosafe/design-system'
+import { Box, Text } from '@nexpy/design-system'
 import { motion, useAnimationControls } from 'framer-motion'
 import isNumber from 'is-number'
 import { Product } from 'models/products'

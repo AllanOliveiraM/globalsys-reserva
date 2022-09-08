@@ -1,4 +1,4 @@
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 
 import { DEFAULT_ICON_SIZE } from 'constants/layout'
 

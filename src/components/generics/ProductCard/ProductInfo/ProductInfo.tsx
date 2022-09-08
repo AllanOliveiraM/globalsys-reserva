@@ -1,4 +1,4 @@
-import { Flex, Text, FlexProps } from '@granosafe/design-system'
+import { Flex, Text, FlexProps } from '@nexpy/design-system'
 import { Product } from 'models/products'
 
 import { currency, subtractPercentage } from 'utils/formatters'

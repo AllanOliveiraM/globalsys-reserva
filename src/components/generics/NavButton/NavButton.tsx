@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Text, A, ButtonProps } from '@granosafe/design-system'
+import { Text, A, ButtonProps } from '@nexpy/design-system'
 
 import { slugify } from 'utils/formatters'
 

@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from '@granosafe/design-system'
+import { Button, ButtonProps } from '@nexpy/design-system'
 import { styled, css } from '@xstyled/styled-components'
 
 type CustomButtonProps = {

@@ -1121,10 +1121,17 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.17.2", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.9", "@babel/runtime@^7.5.0", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.9.tgz#b4fcfce55db3d2e5e080d2490f608a3b9f407f4a"
   integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.12.0", "@babel/runtime@^7.17.2", "@babel/runtime@^7.18.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+  version "7.19.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.0.tgz#22b11c037b094d27a8a2504ea4dcff00f50e2259"
+  integrity sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1542,22 +1549,6 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
-
-"@granosafe/design-system@^0.1.69":
-  version "0.1.69"
-  resolved "https://registry.yarnpkg.com/@granosafe/design-system/-/design-system-0.1.69.tgz#071b06a13818aebaf7006eed9e8f821fc342df39"
-  integrity sha512-LzNKj0S/PynlsSk7zhVnPtOI7FJBNYD4T5wLxzyE1twb0fGLMU8EhhQf0x9iEvHrh1rbQwoYBRqEZihLapVZjg==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@nexpy/react-easy-context-api" "^1.0.2"
-    "@xstyled/styled-components" "^3.5.1"
-    framer-motion "^6.3.16"
-    lodash "^4.17.21"
-    react-hook-form "^7.33.0"
-    react-select "^5.2.2"
-    scheduler "^0.23.0"
-    slugify "^1.6.5"
-    styled-components "^5.3.3"
 
 "@hookydev/babel-plugin-styled-components@^1.10.7-1":
   version "1.10.7-1"
@@ -2058,6 +2049,22 @@
   dependencies:
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
+
+"@nexpy/design-system@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@nexpy/design-system/-/design-system-0.0.4.tgz#0fe581e43273e1aec8d76d0564ae23bfad9db8d2"
+  integrity sha512-gf798ilniNH/EbDgIj6CMlkJ8sitGXiNxKy0zmEV09XpnQJYoVEng1n3eb4gX/sCpDBg7KqXbaUMb/czTnYj5Q==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@nexpy/react-easy-context-api" "^1.0.2"
+    "@xstyled/styled-components" "^3.5.1"
+    framer-motion "^6.3.16"
+    lodash "^4.17.21"
+    react-hook-form "^7.33.0"
+    react-select "^5.2.2"
+    scheduler "^0.23.0"
+    slugify "^1.6.5"
+    styled-components "^5.3.3"
 
 "@nexpy/react-easy-context-api@^1.0.2":
   version "1.0.2"

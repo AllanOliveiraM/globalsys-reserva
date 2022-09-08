@@ -70,13 +70,11 @@ This command will install the husky hooks in the git repository to control prepr
 
 In this project you can find several interesting technologies, such as:
 
-- [@granosafe/design-system](https://gitlab.com/granosafe/granosafe-design-system)
+- [@nexpy/design-system](https://github.com/nexpy-io/nexpy-design-system)
 
-  [NPM](https://www.npmjs.com/package/@granosafe/design-system)
+  [NPM](https://www.npmjs.com/package/@nexpy/design-system)
 
-  [Docs](https://granosafe-design-system.netlify.app/)
-
-  Open source library of components and styles based on @sxtyled/styled-components that I created initially to use in the company Granosafe, but that will be migrated to my Nexpy organization here on Github in the future.
+  Open source library of components and styles based on @sxtyled/styled-components that I created initially to use in the company Granosafe, and it was migrated to my Nexpy organization here on Github.
 
   By using this lib, I adopted the possibility of full styling via prop and the full reuse of even the most basic components.
   This increases the scalability by a million times while making the final bundle much smaller.

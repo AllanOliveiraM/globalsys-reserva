@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { ThemeProvider } from '@granosafe/design-system'
+import { ThemeProvider } from '@nexpy/design-system'
 
 import { FavoritesContextProvider } from 'contexts/FavoritesContext'
 import { LocaleProvider } from 'contexts/LocaleContext'

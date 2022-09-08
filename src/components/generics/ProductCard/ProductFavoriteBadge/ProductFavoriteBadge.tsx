@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react'
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi'
 
-import { Box, Button } from '@granosafe/design-system'
+import { Box, Button } from '@nexpy/design-system'
 import { useClientSide } from 'hooks'
 import { Product } from 'models/products'
 

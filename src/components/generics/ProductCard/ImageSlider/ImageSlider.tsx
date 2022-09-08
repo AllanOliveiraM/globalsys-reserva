@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 import { Product } from 'models/products'
 
 type ImageSliderProps = {

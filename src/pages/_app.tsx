@@ -11,7 +11,7 @@ import { Slide } from 'utils/toasts'
 import GlobalStyle from 'theme/GlobalStyle'
 
 import 'react-toastify/dist/ReactToastify.css'
-import '@granosafe/design-system/dist/preflight.css'
+import '@nexpy/design-system/dist/preflight.css'
 
 const App = ({ Component, pageProps }: AppProps) => (
   <AppWrapper>

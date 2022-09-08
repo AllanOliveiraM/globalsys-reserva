@@ -1,4 +1,4 @@
-import { Box } from '@granosafe/design-system'
+import { Box } from '@nexpy/design-system'
 
 import { IconsCommonProps } from 'types/icons'
 

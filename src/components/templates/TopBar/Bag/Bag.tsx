@@ -7,7 +7,7 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 import { FiX } from 'react-icons/fi'
 import { HiOutlineShoppingBag, HiShoppingBag } from 'react-icons/hi'
 
-import { Flex, Box, Button, Text, Modal, Card } from '@granosafe/design-system'
+import { Flex, Box, Button, Text, Modal, Card } from '@nexpy/design-system'
 import { motion, useAnimationControls } from 'framer-motion'
 import { useClientSide, useTranslate } from 'hooks'
 
